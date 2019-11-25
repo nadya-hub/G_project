@@ -9,6 +9,7 @@ public class SessionHelper extends BaseHelper {
 
     public void openSiteG_P() {
         driver.get("https://www.genpact.com/");
+                driver.manage().window().maximize();
     }
 
 
