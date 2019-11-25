@@ -7,9 +7,7 @@ import org.testng.annotations.Test;
 public class SearchTest extends TestBase {
     @BeforeClass
  public void ensurePreconditionsOpensite() throws InterruptedException {
-        app.getSessionHelper().openSiteG_P();
-
-    }
+        app.getSessionHelper().openSiteG_P(); }
 
     @Test
         public void searchWikiTest() throws InterruptedException {

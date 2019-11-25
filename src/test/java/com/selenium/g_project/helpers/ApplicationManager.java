@@ -40,9 +40,7 @@ public class ApplicationManager {
 
 
 
-    public SearchG_PHelper getSearchG_PHelper() {
-        return searchG_PHelper;
-    }
+    public SearchG_PHelper getSearchG_PHelper() { return searchG_PHelper; }
 
     public SessionHelper getSessionHelper() {
         return sessionHelper;
