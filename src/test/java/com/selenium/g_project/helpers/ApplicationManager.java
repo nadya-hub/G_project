@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
     WebDriver driver;
 
-     SearchG_PHelper searchG_PHelper;
+     JoinG_PHelper joinG_PHelper;
      SessionHelper sessionHelper;
     private String browser;
 
@@ -20,17 +20,18 @@ public class ApplicationManager {
         this.browser = browser;
     }
 
-    public void init() {
+    public void init() throws InterruptedException {
         if(browser.equals(BrowserType.CHROME)){
             driver = new ChromeDriver();
         }
         if(browser.equals(BrowserType.FIREFOX)){
             driver= new FirefoxDriver();
         }
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+       driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 
-        searchG_PHelper = new SearchG_PHelper(driver);
+        joinG_PHelper = new JoinG_PHelper(driver);
         sessionHelper = new SessionHelper(driver);
     }
 
@@ -40,7 +41,7 @@ public class ApplicationManager {
 
 
 
-    public SearchG_PHelper getSearchG_PHelper() { return searchG_PHelper; }
+    public JoinG_PHelper getJoinG_PHelper() { return joinG_PHelper; }
 
     public SessionHelper getSessionHelper() {
         return sessionHelper;

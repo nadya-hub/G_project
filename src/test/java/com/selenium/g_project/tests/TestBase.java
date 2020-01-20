@@ -11,7 +11,7 @@ public class TestBase {
    public static ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
 
     @BeforeClass
-    public void setUp(){
+    public void setUp() throws InterruptedException {
         app.init();
     }
 

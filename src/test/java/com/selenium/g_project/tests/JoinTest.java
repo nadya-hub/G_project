@@ -4,18 +4,17 @@ package com.selenium.g_project.tests;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class SearchTest extends TestBase {
+public class JoinTest extends TestBase {
     @BeforeClass
  public void ensurePreconditionsOpensite() throws InterruptedException {
         app.getSessionHelper().openSiteG_P(); }
 
     @Test
-        public void searchWikiTest() throws InterruptedException {
+        public void searchJoinTest() throws InterruptedException {
 
-
-        app.getSearchG_PHelper().searchByG_P();
+        app.getJoinG_PHelper().joinByG_P();
         Thread.sleep(6000);
-        app.getSearchG_PHelper().refreshPage();
+        app.getJoinG_PHelper().refreshPage();
         Thread.sleep(6000);
     }
 

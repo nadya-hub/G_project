@@ -5,7 +5,7 @@
 
     <test name="RegressionG_P">
         <classes>
-            <class name="com.selenium.g_project.tests.SearchTest"/>
+            <class name="com.selenium.g_project.tests.JoinTest"/>
 
         </classes>
     </test>
