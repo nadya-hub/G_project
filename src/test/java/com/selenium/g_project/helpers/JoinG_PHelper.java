@@ -20,11 +20,11 @@ public class JoinG_PHelper extends BaseHelper {
         Thread.sleep(6000);
         type(By.xpath("//input[@placeholder='name@company.com'] "),"MYjob@happy.com");
         type(By.xpath("//input[@placeholder='Password']"),"1234567g");
-        Thread.sleep(6000);
+        Thread.sleep(10000);
         click(By.xpath("//button[@class='js_submit button blue submit-button'] "));
     }
 
-    public void refreshPage() {
+    public void NewPage() {
         click(By.xpath("//a[contains(text(),'Learn more')] "));
     }
 }

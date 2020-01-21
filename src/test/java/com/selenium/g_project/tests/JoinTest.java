@@ -13,9 +13,9 @@ public class JoinTest extends TestBase {
         public void searchJoinTest() throws InterruptedException {
 
         app.getJoinG_PHelper().joinByG_P();
-        Thread.sleep(6000);
-        app.getJoinG_PHelper().refreshPage();
-        Thread.sleep(6000);
+        Thread.sleep(8000);
+        app.getJoinG_PHelper().NewPage();
+        Thread.sleep(8000);
     }
 
 
