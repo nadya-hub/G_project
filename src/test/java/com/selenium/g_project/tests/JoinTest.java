@@ -15,7 +15,7 @@ public class JoinTest extends TestBase {
         app.getJoinG_PHelper().joinByG_P();
         Thread.sleep(8000);
         app.getJoinG_PHelper().NewPage();
-        Thread.sleep(8000);
+        Thread.sleep(25000);
     }
 
 
