@@ -9,7 +9,7 @@ public class SessionHelper extends BaseHelper {
 
     public void openSiteG_P() {
 
-        driver.get("http://polytex-technologies.com/");
+        driver.get("https://voyagerlabs.co/");
                 driver.manage().window().maximize();
     }
 
