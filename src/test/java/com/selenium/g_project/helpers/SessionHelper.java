@@ -8,9 +8,8 @@ public class SessionHelper extends BaseHelper {
     }
 
     public void openSiteG_P() {
-        driver.get("https://personetics.com/");
-       // driver.get("https://voyagerlabs.co/");
-                driver.manage().window().maximize();
+        driver.get("https://personetics.com");
+        driver.manage().window().maximize();
     }
 
 
