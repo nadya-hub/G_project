@@ -13,7 +13,7 @@ public class JoinTest extends TestBase {
         public void searchJoinTest() throws InterruptedException {
 
         app.getJoinG_PHelper().joinByG_P();
-       Thread.sleep(8000);
+       Thread.sleep(4000);
        app.getJoinG_PHelper().NewPage();
 
     }
