@@ -10,27 +10,31 @@ public class JoinG_PHelper extends BaseHelper {
     public JoinG_PHelper(WebDriver driver) { super(driver); }
     public void joinByG_P() throws InterruptedException {
 
-        new Actions(driver).moveToElement(driver.findElement(By.xpath("//a[contains(text(),'RESOURCES')]"))).perform();
-        click(By.xpath("//a[@class='nav__dropdown-link'][contains(text(),'Videos')] "));
+        new Actions(driver).moveToElement(driver.findElement(By.xpath("//div[contains(text(),'Company')]"))).perform();
+        click(By.xpath("//div[contains(text(),'Careers')] "));
         Thread.sleep(4000);
-        new Actions(driver).moveToElement(driver.findElement(By.xpath(" //div[@class='container']//div[1]//div[1]//a[1]//div[1] "))).click().perform();
-      Thread.sleep(8000);
-        new Actions(driver).moveToElement(driver.findElement(By.xpath(" //body[@class='single single-resource_center postid-4568 see-how-rbc-uses-personetics-to-deliver-ai-powered-financial-guidance-and-automated-savings']  "))).click().perform();
-     Thread.sleep(6000);
-        click(By.xpath("//li[@id='menu-item-5007']//a[contains(text(),'Contact Us')] "));
-        Thread.sleep(6000);
-        type(By.xpath("//input[@id='input_3_10'] "),"Nadezda");
-        type(By.xpath(" //input[@id='input_3_11']"),("Serenok"));
-        Thread.sleep(6000);
-        type(By.xpath("  //input[@id='input_3_2']"),("4565890"));
+        new Actions(driver).moveToElement(driver.findElement(By.xpath("//div[contains(text(),'QA Engineer')]"))).click()
+                .perform();
+        new Actions(driver).moveToElement(driver.findElement(By.xpath("//div[contains(text(),'QA Engineer')]"))).perform();
         Thread.sleep(4000);
-        type(By.xpath("  //input[@id='input_3_3']"),("MyJob@com"));
+       new Actions(driver).moveToElement(driver.findElement(By.xpath(" //div[contains(text(),'Products')] "))).perform();
+    Thread.sleep(4000);
+       click(By.xpath("//div[contains(text(),'VoyagerAnalytics')] "));
+       Thread.sleep(4000);
+        new Actions(driver).moveToElement(driver.findElement(By.xpath("//span[@class='bdt-icon-wrapper']"))).perform();
+       new Actions(driver).moveToElement(driver.findElement(By.xpath("//span[@class='bdt-icon-wrapper']"))).click().perform();
         Thread.sleep(6000);
-        click(By.xpath("//input[@id='gform_submit_button_3']"));
-        }
+
+    new Actions(driver).moveToElement(driver.findElement(By.xpath("  //div[@class='uael-content'] "))).perform();
+        Thread.sleep(6000);
+       new Actions(driver).moveToElement(driver.findElement(By.xpath(" //div[@class='uael-content'] "))).click().perform();
+        Thread.sleep(18000);
+       click(By.xpath(" //i[@class='fas fa-times']"));
+    }
+
      public void NewPage() throws InterruptedException {
 
-       click(By.xpath(" //a[@class='logo']"));
-         Thread.sleep(4000);
+       click(By.xpath(" //a//img[@class='attachment-large size-large'] "));
+         Thread.sleep(3000);
       } }
 
